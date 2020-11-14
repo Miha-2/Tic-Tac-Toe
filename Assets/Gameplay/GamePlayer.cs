@@ -28,13 +28,27 @@ public class GamePlayer : MonoBehaviour
     private FieldType[,] zones = new FieldType[3,3];
     private Image lastImage;
     private bool isFinnished = false;
-    private bool hasTurn = false;
+    private bool _hasTurn = false;
     [SerializeField] private GameObject _rematchButton = null;
     private const int SET_IMAGE = 0;
     private Image[] placedImages = new Image[9];
+    public Photon.Realtime.Player opponent;
     
     private EventSystem _eventSystem;
     [SerializeField] private GraphicRaycaster _graphicRaycaster = null;
+    [SerializeField] private PlayerInfoDisplay selfDisplay = null;
+    [SerializeField] private PlayerInfoDisplay opponentDisplay = null;
+    
+    private bool HasTurn
+    {
+        get => _hasTurn;
+        set
+        {
+            selfDisplay.HasTurn = value;
+            opponentDisplay.HasTurn = !value;
+            _hasTurn = value;
+        }
+    }
 
     private void OnEnable()
     {
@@ -44,15 +58,20 @@ public class GamePlayer : MonoBehaviour
 
     public void StartGame()
     {
-        hasTurn = PhotonNetwork.IsMasterClient;
+        HasTurn = PhotonNetwork.IsMasterClient;
         myType = PhotonNetwork.IsMasterClient ? FieldType.Cross : FieldType.Circle;
+        
+        selfDisplay.Name = PhotonNetwork.LocalPlayer.NickName;
+        selfDisplay.Type = myType == FieldType.Circle ? circle : cross;
+        opponentDisplay.Name = opponent.NickName;
+        opponentDisplay.Type = myType == FieldType.Circle ? cross : circle;
     }
     
     private void Update()
     {
         // if (Input.GetKeyDown(KeyCode.R));
         //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        if(Input.GetMouseButtonDown(0) && hasTurn)
+        if(Input.GetMouseButtonDown(0) && HasTurn)
         {
             ChooseZone();
         }
@@ -97,7 +116,7 @@ public class GamePlayer : MonoBehaviour
             byte _win = CheckForWin(_zoneId, myType);
             
             object[] l = {_zoneId, myType, lastImage.transform.position, _win};
-            hasTurn = false;
+            HasTurn = false;
             PhotonNetwork.RaiseEvent(SET_IMAGE, l, RaiseEventOptions.Default, SendOptions.SendReliable);
             lastImage = null;
         }
@@ -107,7 +126,7 @@ public class GamePlayer : MonoBehaviour
     {
         if (obj.Code == SET_IMAGE)
         {
-            hasTurn = true;
+            HasTurn = true;
             
             object[] data = (object[]) obj.CustomData;
             Image toInst = (FieldType)data[1] == FieldType.Cross ? cross : circle;

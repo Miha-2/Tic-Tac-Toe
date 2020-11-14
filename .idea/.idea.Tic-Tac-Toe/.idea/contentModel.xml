@@ -179,6 +179,7 @@
           </e>
         </e>
         <e p="Player.cs" t="Include" />
+        <e p="PlayerInfoDisplay.cs" t="Include" />
         <e p="Rematch.cs" t="Include" />
         <e p="StartCanvas.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">

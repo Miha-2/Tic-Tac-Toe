@@ -14,6 +14,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     [SerializeField] private StartCanvas _startCanvas = null;
     [SerializeField] private TextMeshProUGUI _infoText = null;
     private GamePlayer _gamePlayer = null;
+    private Photon.Realtime.Player opponent;
 
     private void Awake()
     {
@@ -50,21 +51,32 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
     {
+        opponent = newPlayer;
         GameStarts();
     }
 
     public override void OnJoinedRoom()
     {
         if(PhotonNetwork.CurrentRoom.PlayerCount != 2) return;
+        Photon.Realtime.Player[] playerList = PhotonNetwork.PlayerList;
+        for (int i = 0; i < playerList.Length; i++)
+        {
+            if (playerList[i] != PhotonNetwork.LocalPlayer)
+            {
+                opponent = playerList[i];
+                break;
+            }
+        }
         GameStarts();
     }
 
     private void GameStarts()
     {
         PhotonNetwork.CurrentRoom.IsOpen = false;
-        _gamePlayer.StartGame();
+        _gamePlayer.opponent = opponent;
         _startCanvas.gameObject.SetActive(false);
         _gameCanvas.SetActive(true);
+        _gamePlayer.StartGame();
     }
 
     public override void OnLeftRoom()
