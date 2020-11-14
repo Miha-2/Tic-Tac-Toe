@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelUserStore">
+    <attachedFolders />
+    <explicitIncludes>
+      <Path>Library/PackageCache/com.unity.2d.animation@4.2.2</Path>
+      <Path>Library/PackageCache/com.unity.2d.common@3.0.0</Path>
+      <Path>Library/PackageCache/com.unity.2d.path@3.0.1</Path>
+      <Path>Library/PackageCache/com.unity.2d.psdimporter@3.1.4</Path>
+      <Path>Library/PackageCache/com.unity.2d.spriteshape@4.1.2</Path>
+      <Path>Library/PackageCache/com.unity.addressables@1.16.6</Path>
+      <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
+      <Path>Library/PackageCache/com.unity.ide.rider@1.2.1</Path>
+      <Path>Library/PackageCache/com.unity.localization@0.9.0-preview</Path>
+      <Path>Library/PackageCache/com.unity.mathematics@1.1.0</Path>
+      <Path>Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0</Path>
+      <Path>Library/PackageCache/com.unity.scriptablebuildpipeline@1.13.1</Path>
+      <Path>Library/PackageCache/com.unity.test-framework@1.1.14</Path>
+      <Path>Library/PackageCache/com.unity.textmeshpro@3.0.1</Path>
+      <Path>Packages</Path>
+      <Path>ProjectSettings</Path>
+    </explicitIncludes>
+    <explicitExcludes>
+      <Path>.idea</Path>
+      <Path>Archive</Path>
+      <Path>Assets2</Path>
+      <Path>Assets3</Path>
+      <Path>Builds</Path>
+      <Path>Library</Path>
+      <Path>Logs</Path>
+      <Path>PhotonBuild</Path>
+      <Path>SingeBuild</Path>
+      <Path>Temp</Path>
+      <Path>UIElementsSchema</Path>
+      <Path>UserSettings</Path>
+      <Path>obj</Path>
+    </explicitExcludes>
+  </component>
+</project>
