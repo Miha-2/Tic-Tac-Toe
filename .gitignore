@@ -9,6 +9,9 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Ss]ingeBuild/
+/[Pp]hotonBuild/
+/[Aa]ssets3/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
