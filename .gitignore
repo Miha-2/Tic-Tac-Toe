@@ -11,6 +11,7 @@
 /[Mm]emoryCaptures/
 /[Ss]ingeBuild/
 /[Pp]hotonBuild/
+/[Pp]hotonApkBuild/
 /[Aa]ssets3/
 
 # Never ignore Asset meta data
