@@ -6,25 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65515265-2fe4-403c-808a-2b566e9f964a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Gameplay/circleFull.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Gameplay/circleFull.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PlayerInfoDisplay.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerDisplayInfo.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerDisplayInfo.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PoinderFade.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PoinderFade.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PoinderOff.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PoinderOff.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TurnPoiner.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TurnPoiner.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gameplay/GamePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gameplay/GamePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +115,7 @@
       <workItem from="1604436198857" duration="5852000" />
       <workItem from="1604521698623" duration="1916000" />
       <workItem from="1605379878815" duration="4335000" />
+      <workItem from="1605509329159" duration="46000" />
     </task>
     <servers />
   </component>
@@ -151,6 +134,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

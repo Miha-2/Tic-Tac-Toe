@@ -28,6 +28,7 @@
       <Path>Builds</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>PhotonApkBuild</Path>
       <Path>PhotonBuild</Path>
       <Path>SingeBuild</Path>
       <Path>Temp</Path>
