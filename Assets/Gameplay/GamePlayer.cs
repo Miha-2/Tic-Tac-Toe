@@ -112,11 +112,11 @@ public class GamePlayer : MonoBehaviour
         {
             zones[Mathf.FloorToInt(_zoneId/3),_zoneId % 3] = myType;
             lastImage.color = Color.white;
+            HasTurn = false;
 
             byte _win = CheckForWin(_zoneId, myType);
             
             object[] l = {_zoneId, myType, lastImage.transform.position, _win};
-            HasTurn = false;
             PhotonNetwork.RaiseEvent(SET_IMAGE, l, RaiseEventOptions.Default, SendOptions.SendReliable);
             lastImage = null;
         }
@@ -184,6 +184,9 @@ public class GamePlayer : MonoBehaviour
     {
         isFinnished = true;
         _rematchButton.SetActive(true);
+
+        selfDisplay.HasTurn = false;
+        opponentDisplay.HasTurn = false;
         
         string t;
         if (type == myType)
