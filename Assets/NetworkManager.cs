@@ -25,10 +25,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void Connect(string playerName)
     {
+        string[] split = Application.version.Split("."[0]);
+        string gameVersion = "v"+ split[0] + "." + split[1];
         PhotonNetwork.AutomaticallySyncScene = true;
-        PhotonNetwork.GameVersion = "0.1";
+        PhotonNetwork.GameVersion = gameVersion;
         PhotonNetwork.NickName = playerName;
         PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.GameVersion = gameVersion;
         _infoText.text = "Connecting to server";
     }
 
@@ -91,4 +94,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         _gamePlayer.ResetBoard(false);
         PhotonNetwork.LeaveRoom();
     }
+}
+
+public enum EventType
+{
+    SetImage = (byte)0,
+    RematchReady = (byte)1,
+    SetStartingPlayer = (byte)2
 }

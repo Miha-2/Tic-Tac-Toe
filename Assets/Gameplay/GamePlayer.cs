@@ -26,11 +26,12 @@ public class GamePlayer : MonoBehaviour
     private FieldType myType;
     private int zoneId = -1;
     private FieldType[,] zones = new FieldType[3,3];
+    [SerializeField] private Transform[] _zoneTransforms = null;
     private Image lastImage;
     private bool isFinnished = false;
     private bool _hasTurn = false;
     [SerializeField] private GameObject _rematchButton = null;
-    private const int SET_IMAGE = 0;
+    [SerializeField] private GameObject _randomButton = null;
     private Image[] placedImages = new Image[9];
     public Photon.Realtime.Player opponent;
     
@@ -58,9 +59,16 @@ public class GamePlayer : MonoBehaviour
 
     public void StartGame()
     {
-        HasTurn = PhotonNetwork.IsMasterClient;
+        if (PhotonNetwork.IsMasterClient)
+        {
+            HasTurn = Random.Range(0f, 1f) < .5f;
+            object[] data = {!HasTurn};
+            PhotonNetwork.RaiseEvent((byte) EventType.SetStartingPlayer, data, RaiseEventOptions.Default,
+                SendOptions.SendUnreliable);
+        }
+
         myType = PhotonNetwork.IsMasterClient ? FieldType.Cross : FieldType.Circle;
-        
+
         selfDisplay.Name = PhotonNetwork.LocalPlayer.NickName;
         selfDisplay.Type = myType == FieldType.Circle ? circle : cross;
         opponentDisplay.Name = opponent.NickName;
@@ -89,12 +97,41 @@ public class GamePlayer : MonoBehaviour
         {
             if (result.gameObject.TryGetComponent(out TouchZone t))
             {
-                TouchZone(t.Id, t.transform);
+                TouchZone(t.Id);
             }
         }
     }
 
-    private void TouchZone(int _zoneId, Transform _zoneTransform)
+    [ContextMenu("Random Zone")]
+    public void OnClick_SelectRandom()
+    {
+        if(!HasTurn) return;
+        int freeZones = 9;
+        foreach (FieldType type in zones)
+        {
+            if(type != FieldType.Nobody)
+                freeZones--;
+        }
+
+        int randomZone = Random.Range(1, freeZones + 1);
+        int randomId = 0;
+        foreach (FieldType type in zones)
+        {
+            if (randomZone == 0) break;
+            if (type != FieldType.Nobody)
+                randomId++;
+            else
+            {
+                randomZone--;
+                randomId++;
+            }
+        }
+        
+        TouchZone(randomId);
+        TouchZone(randomId);
+    }
+
+    private void TouchZone(int _zoneId)
     {
         if (isFinnished) return;
         _zoneId -= 1;
@@ -102,8 +139,8 @@ public class GamePlayer : MonoBehaviour
         if (_zoneId != zoneId)
         {
             Image toInst = myType == FieldType.Cross ? cross : circle;
-            if (lastImage != null) lastImage.transform.position = _zoneTransform.position;
-            else lastImage = Instantiate(toInst, _zoneTransform.position, Quaternion.identity, _gameCanvas);
+            if (lastImage != null) lastImage.transform.position = _zoneTransforms[_zoneId].position;
+            else lastImage = Instantiate(toInst, _zoneTransforms[_zoneId].position, Quaternion.identity, _gameCanvas);
             lastImage.color = unconfirmedColor;
             placedImages[_zoneId] = lastImage;
             zoneId = _zoneId;
@@ -116,27 +153,38 @@ public class GamePlayer : MonoBehaviour
 
             byte _win = CheckForWin(_zoneId, myType);
             
-            object[] l = {_zoneId, myType, lastImage.transform.position, _win};
-            PhotonNetwork.RaiseEvent(SET_IMAGE, l, RaiseEventOptions.Default, SendOptions.SendReliable);
+            object[] l = {_zoneId, myType, _win};
+            PhotonNetwork.RaiseEvent((byte) EventType.SetImage, l, RaiseEventOptions.Default, SendOptions.SendReliable);
             lastImage = null;
         }
     }
 
     private void NetworkingClientOnEventReceived(EventData obj)
     {
-        if (obj.Code == SET_IMAGE)
+        switch (obj.Code)
         {
-            HasTurn = true;
+            case (byte)EventType.SetImage:
+            {
+                object[] data = (object[]) obj.CustomData;
+                HasTurn = true;
             
-            object[] data = (object[]) obj.CustomData;
-            Image toInst = (FieldType)data[1] == FieldType.Cross ? cross : circle;
-            Image i = Instantiate(toInst, (Vector3) data[2], quaternion.identity, _gameCanvas);
-            zones[Mathf.FloorToInt((int)data[0]/3),(int)data[0] % 3] = (FieldType)data[1];
+                Image toInst = (FieldType)data[1] == FieldType.Cross ? cross : circle;
+                Image i = Instantiate(toInst, _zoneTransforms[(int)data[0]].position, quaternion.identity, _gameCanvas);
+                zones[Mathf.FloorToInt((int)data[0]/3),(int)data[0] % 3] = (FieldType)data[1];
             
-            placedImages[(int)data[0]] = i;
+                placedImages[(int)data[0]] = i;
             
-            if((byte)data[3] != 0)
-                Win((byte)data[3] == 1 ? (FieldType)data[1] : FieldType.Nobody);
+                if((byte)data[2] != 0)
+                    Win((byte)data[2] == 1 ? (FieldType)data[1] : FieldType.Nobody);
+                break;
+            }
+            case (byte)EventType.SetStartingPlayer:
+            {
+                object[] data = (object[]) obj.CustomData;
+                print("Received: "+(bool)data[0]);
+                HasTurn = (bool)data[0];
+                break;
+            }
         }
     }
     //0 => no win
@@ -184,6 +232,7 @@ public class GamePlayer : MonoBehaviour
     {
         isFinnished = true;
         _rematchButton.SetActive(true);
+        _randomButton.SetActive(false);
 
         selfDisplay.HasTurn = false;
         opponentDisplay.HasTurn = false;
@@ -221,6 +270,7 @@ public class GamePlayer : MonoBehaviour
         }
 
         _rematchButton.SetActive(false);
+        _randomButton.SetActive(true);
         winnerText.text = String.Empty;
         isFinnished = false;
         if(rematch)

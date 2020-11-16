@@ -15,7 +15,6 @@ public class Rematch : MonoBehaviour
     private bool _opponentReady;
     private static readonly Color defaultColor = new Color(0.17f, 0.17f, 0.17f);
     private static readonly Color rematchColor = new Color(0.24f, 0.45f, 0.24f);
-    private const int REMATCH_READY = 1;
 
     private void OnEnable()
     {
@@ -25,10 +24,10 @@ public class Rematch : MonoBehaviour
 
     private void NetworkingClientOnEventReceived(EventData obj)
     {
-        object data = obj.CustomData;
-        if (obj.Code == REMATCH_READY)
+        if (obj.Code == (byte)EventType.RematchReady)
         {
-            _opponentReady = (bool)data;
+            object[] data = (object[])obj.CustomData;
+            _opponentReady = (bool)data[0];
             if (_rematchReady && _opponentReady) DoRematch();
         }
     }
@@ -37,8 +36,10 @@ public class Rematch : MonoBehaviour
     {
         _rematchReady = !_rematchReady;
         _buttonFill.color = _rematchReady ? rematchColor : defaultColor;
+
+        object[] data = {_rematchReady};
         
-        PhotonNetwork.RaiseEvent(REMATCH_READY, _rematchReady, RaiseEventOptions.Default,
+        PhotonNetwork.RaiseEvent((byte)EventType.RematchReady, data, RaiseEventOptions.Default,
             SendOptions.SendUnreliable);
             
         if(_rematchReady && _opponentReady)
