@@ -62,7 +62,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         _infoText.text = "Failed to create a room";
     }
 
-    public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
+    public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         opponent = newPlayer;
         GameStarts();
@@ -71,7 +71,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         if(PhotonNetwork.CurrentRoom.PlayerCount != 2) return;
-        Photon.Realtime.Player[] playerList = PhotonNetwork.PlayerList;
+        Player[] playerList = PhotonNetwork.PlayerList;
         for (int i = 0; i < playerList.Length; i++)
         {
             if (playerList[i] != PhotonNetwork.LocalPlayer)
@@ -87,7 +87,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.CurrentRoom.IsOpen = false;
         _gamePlayer.opponent = opponent;
-        _startCanvas.gameObject.SetActive(false);
+        _lobbyCanvas.gameObject.SetActive(false);
         _gameCanvas.SetActive(true);
         _gamePlayer.StartGame();
     }
@@ -96,7 +96,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         _infoText.text = "You left the room";
         _gameCanvas.SetActive(false);
-        _startCanvas.gameObject.SetActive(true);
+        _lobbyCanvas.gameObject.SetActive(true);
     }
 
     public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)

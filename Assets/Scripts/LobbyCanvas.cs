@@ -9,13 +9,19 @@ using UnityEngine;
 public class LobbyCanvas : MonoBehaviourPunCallbacks
 {
     private NetworkManager _netManager;
+    [SerializeField] private PlayerListingMenu playerListingMenu = null;
     public void SetReference(NetworkManager netManager)
     {
         _netManager = netManager;
     }
 
-    public override void OnPlayerLeftRoom(Player otherPlayer)
+    public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-        base.OnPlayerLeftRoom(otherPlayer);
+        playerListingMenu.UpdateListings(roomList);
+    }
+
+    public void OnClick_CreateNewRoom()
+    {
+        PhotonNetwork.CreateRoom(PhotonNetwork.LocalPlayer.NickName);
     }
 }
