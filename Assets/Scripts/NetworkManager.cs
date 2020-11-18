@@ -97,6 +97,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         _infoText.text = "You left the room";
         _gameCanvas.SetActive(false);
         _lobbyCanvas.gameObject.SetActive(true);
+        _lobbyCanvas.LeftRoom();
     }
 
     public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)

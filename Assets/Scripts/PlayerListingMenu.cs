@@ -29,7 +29,7 @@ public class PlayerListingMenu : MonoBehaviour
                 }
             }
 
-            if (!isFind)
+            if (!isFind && !updatedRoom.RemovedFromList)
             {
                 PlayerListing newListing =
                     Instantiate(playerListing, Vector3.zero, quaternion.identity, contentTransform);
