@@ -11,14 +11,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65515265-2fe4-403c-808a-2b566e9f964a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/VersionDisplay.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VersionDisplay.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Image.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Image.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Display.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Display.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LanguageManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LanguageManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LobbyCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LobbyCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInfoDisplay.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInfoDisplay.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rematch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rematch.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StartCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StartCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TouchZone.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TouchZone.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VersionDisplay.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VersionDisplay.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gameplay/GamePlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gameplay/GamePlayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gameplay/TouchZone.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gameplay/TouchZone.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LanguageManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LanguageManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NetworkManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NetworkManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInfoDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInfoDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rematch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rematch.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StartCanvas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StartCanvas.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VersionDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VersionDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +77,15 @@
         <option value="$PROJECT_DIR$/Assets/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Gameplay/TouchZone.cs" />
         <option value="$PROJECT_DIR$/Assets/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Rematch.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerInfoDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Gameplay/GamePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/StartCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/VersionDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/CustomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Rematch.cs" />
+        <option value="$PROJECT_DIR$/Assets/LobbyCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
       </list>
     </option>
   </component>
@@ -72,6 +112,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -131,6 +172,11 @@
       <workItem from="1605387739228" duration="28000" />
       <workItem from="1605470272897" duration="2241000" />
       <workItem from="1605530286649" duration="1060000" />
+      <workItem from="1605606026645" duration="692000" />
+      <workItem from="1605607791156" duration="88000" />
+      <workItem from="1605607956241" duration="1568000" />
+      <workItem from="1605628583642" duration="3151000" />
+      <workItem from="1605697397898" duration="703000" />
     </task>
     <servers />
   </component>
@@ -250,6 +296,14 @@
     </state>
     <state width="1877" height="186" key="GridCell.Tab.3.right/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602936866773" />
     <state width="1493" height="288" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1605472361376" />
+    <state x="712" y="221" key="RiderGenerateDialog" timestamp="1605629687533">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="712" y="221" key="RiderGenerateDialog/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605629687533" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1605628900726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/-1920.1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605628900726" />
     <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605471399543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

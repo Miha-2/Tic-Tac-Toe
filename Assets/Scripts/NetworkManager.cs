@@ -12,6 +12,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     
     [SerializeField] private GameObject _gameCanvas = null;
     [SerializeField] private StartCanvas _startCanvas = null;
+    [SerializeField] private LobbyCanvas _lobbyCanvas = null;
     [SerializeField] private TextMeshProUGUI _infoText = null;
     private GamePlayer _gamePlayer = null;
     private Photon.Realtime.Player opponent;
@@ -20,6 +21,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         _gamePlayer = FindObjectOfType<GamePlayer>();
         //Set reference
+        _lobbyCanvas.SetReference(this);
         _startCanvas.SetReference(this);
     }
 
@@ -27,8 +29,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         string[] split = Application.version.Split("."[0]);
         string gameVersion = "v"+ split[0] + "." + split[1];
-        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.GameVersion = gameVersion;
+        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = playerName;
         PhotonNetwork.ConnectUsingSettings();
         PhotonNetwork.GameVersion = gameVersion;
@@ -39,7 +41,15 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         _infoText.text = "Successfully connected to server";
         Debug.Log("Connected to master");
-        PhotonNetwork.JoinOrCreateRoom("defaultRoom", new RoomOptions{MaxPlayers = 2}, TypedLobby.Default);
+        PhotonNetwork.JoinLobby();
+        //PhotonNetwork.JoinOrCreateRoom("defaultRoom", new RoomOptions{MaxPlayers = 2}, TypedLobby.Default);
+    }
+
+    public override void OnJoinedLobby()
+    {
+        _startCanvas.gameObject.SetActive(false);
+        _lobbyCanvas.gameObject.SetActive(true);
+        Debug.Log("Successfully joined a lobby");
     }
 
     public override void OnCreatedRoom()

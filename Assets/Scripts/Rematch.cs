@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using Photon.Pun;
 using Photon.Realtime;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,10 +12,11 @@ public class Rematch : MonoBehaviour
 {
     private GamePlayer _gamePlayer;
     [SerializeField] private Image _buttonFill = null;
+    [SerializeField] private TextMeshProUGUI _buttonText = null;
     private bool _rematchReady;
     private bool _opponentReady;
-    private static readonly Color defaultColor = new Color(0.17f, 0.17f, 0.17f);
-    private static readonly Color rematchColor = new Color(0.24f, 0.45f, 0.24f);
+    private static readonly Color MainColor = new Color(0.17f, 0.17f, 0.17f);
+    private static readonly Color SecondaryColor = Color.white;
 
     private void OnEnable()
     {
@@ -35,7 +37,8 @@ public class Rematch : MonoBehaviour
     public void OnClick_Rematch()
     {
         _rematchReady = !_rematchReady;
-        _buttonFill.color = _rematchReady ? rematchColor : defaultColor;
+        _buttonFill.color = _rematchReady ? SecondaryColor : MainColor;
+        _buttonText.color = _rematchReady ? MainColor : SecondaryColor;
 
         object[] data = {_rematchReady};
         
@@ -53,7 +56,8 @@ public class Rematch : MonoBehaviour
     {
         _rematchReady = false;
         _opponentReady = false;
-        _buttonFill.color = defaultColor;
+        _buttonFill.color = MainColor;
+        _buttonText.color = SecondaryColor;
         _gamePlayer.ResetBoard(true);
     }
 

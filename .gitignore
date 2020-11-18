@@ -14,6 +14,7 @@
 /[Pp]hotonApkBuild/
 /[Aa]ssets3/
 /[Aa]rchive/
+/[Ww]eb[Gg][Ll]Builds
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
