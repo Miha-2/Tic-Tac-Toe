@@ -40,7 +40,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         _infoText.text = "Successfully connected to server";
-        Debug.Log("Connected to master");
         PhotonNetwork.JoinLobby();
         //PhotonNetwork.JoinOrCreateRoom("defaultRoom", new RoomOptions{MaxPlayers = 2}, TypedLobby.Default);
     }
@@ -49,7 +48,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         _startCanvas.gameObject.SetActive(false);
         _lobbyCanvas.gameObject.SetActive(true);
-        Debug.Log("Successfully joined a lobby");
     }
 
     public override void OnCreatedRoom()
@@ -71,6 +69,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         if(PhotonNetwork.CurrentRoom.PlayerCount != 2) return;
+        _lobbyCanvas.JoinedRoom();
         Player[] playerList = PhotonNetwork.PlayerList;
         for (int i = 0; i < playerList.Length; i++)
         {
@@ -86,6 +85,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     private void GameStarts()
     {
         PhotonNetwork.CurrentRoom.IsOpen = false;
+        PhotonNetwork.CurrentRoom.IsVisible = false;
         _gamePlayer.opponent = opponent;
         _lobbyCanvas.gameObject.SetActive(false);
         _gameCanvas.SetActive(true);
@@ -100,7 +100,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         _lobbyCanvas.LeftRoom();
     }
 
-    public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        _gamePlayer.ResetBoard(false);
+        PhotonNetwork.LeaveRoom();
+    }
+
+    public void OnClick_LeaveRoom()
     {
         _gamePlayer.ResetBoard(false);
         PhotonNetwork.LeaveRoom();

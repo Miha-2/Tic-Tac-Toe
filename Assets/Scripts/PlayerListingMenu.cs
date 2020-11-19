@@ -21,14 +21,12 @@ public class PlayerListingMenu : MonoBehaviour
                     isFind = true;
                     if (updatedRoom.RemovedFromList)
                     {
-                        PlayerListing toRemove = _availableRooms[j];
-                        _availableRooms.RemoveAt(j);
-                        Destroy(toRemove.gameObject);
+                        RemoveListing(j);
                         break;
                     }
                 }
             }
-
+            
             if (!isFind && !updatedRoom.RemovedFromList)
             {
                 PlayerListing newListing =
@@ -37,5 +35,20 @@ public class PlayerListingMenu : MonoBehaviour
                 _availableRooms.Add(newListing);
             }
         }
+    }
+
+    public void ResetListings()
+    {
+        for (int i = 0; i < _availableRooms.Count; i++)
+        {
+            RemoveListing(i);
+        }
+    }
+
+    private void RemoveListing(int index)
+    {
+        PlayerListing toRemove = _availableRooms[index];
+        _availableRooms.RemoveAt(index);
+        Destroy(toRemove.gameObject);
     }
 }

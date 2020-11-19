@@ -16,9 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65515265-2fe4-403c-808a-2b566e9f964a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/NameDisplay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LobbyCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LobbyCanvas.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerListingMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerListingMenu.cs" afterDir="false" />
@@ -30,9 +30,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/NameDisplay.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -57,10 +54,13 @@
         <option value="$PROJECT_DIR$/Assets/PlayerListings.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerListingMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerListing.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerListingMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/NameDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Photon/PhotonRealtime/Code/Room.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInfoDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerListingMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LobbyCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs" />
       </list>
     </option>
   </component>
@@ -154,6 +154,10 @@
       <workItem from="1605697397898" duration="703000" />
       <workItem from="1605702536386" duration="3593000" />
       <workItem from="1605713878085" duration="1658000" />
+      <workItem from="1605718559964" duration="1874000" />
+      <workItem from="1605777927738" duration="1251000" />
+      <workItem from="1605781755460" duration="1096000" />
+      <workItem from="1605783197894" duration="7228000" />
     </task>
     <servers />
   </component>

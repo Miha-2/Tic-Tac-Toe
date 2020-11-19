@@ -64,7 +64,7 @@ public class GamePlayer : MonoBehaviour
             HasTurn = Random.Range(0f, 1f) < .5f;
             object[] data = {!HasTurn};
             PhotonNetwork.RaiseEvent((byte) EventType.SetStartingPlayer, data, RaiseEventOptions.Default,
-                SendOptions.SendUnreliable);
+                SendOptions.SendReliable);
         }
 
         myType = PhotonNetwork.IsMasterClient ? FieldType.Cross : FieldType.Circle;
@@ -181,7 +181,7 @@ public class GamePlayer : MonoBehaviour
             case (byte)EventType.SetStartingPlayer:
             {
                 object[] data = (object[]) obj.CustomData;
-                print("Received: "+(bool)data[0]);
+                //print("Received: "+(bool)data[0]);
                 HasTurn = (bool)data[0];
                 break;
             }
@@ -261,8 +261,7 @@ public class GamePlayer : MonoBehaviour
             placedImages[index] = null;
             if (placement == null)
             {
-                Debug.Log("skipped at: " + index);
-                continue;
+                 continue;
             }
             Destroy(placement.gameObject);
 
