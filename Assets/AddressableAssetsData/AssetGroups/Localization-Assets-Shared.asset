@@ -17,20 +17,28 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 0149ad9b13da0c34789c8593f0871092
   m_SerializeEntries:
-  - m_GUID: d3c2e736c3a68094d84ffd88c047bea4
-    m_Address: StringTable Shared Data
+  - m_GUID: 29649cb8d43d87242a0d28792be85b67
+    m_Address: Start Canvas Shared Data
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Localization.Tables.SharedTableData, Unity.Localization,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: f6006b8e45079644d971434ec79cfae1
-    m_Address: NewTable Shared Data
+  - m_GUID: 5c755d3ff02c79240a94f0b3ba4870fb
+    m_Address: Lobby Canvas Shared Data
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Localization.Tables.SharedTableData, Unity.Localization,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 625fe2e3d268aa044b85f2bb322d9d34
+    m_Address: Game Canvas Table Shared Data
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e6ca2d94b80f0eb4caf8c903d1399bd9
+    m_Address: Smart Test Shared Data
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 1

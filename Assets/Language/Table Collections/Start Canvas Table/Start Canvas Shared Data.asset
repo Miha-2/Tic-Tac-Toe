@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Start Canvas Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Start Canvas
+  m_TableCollectionNameGuidString: 29649cb8d43d87242a0d28792be85b67
+  m_Entries:
+  - m_Id: 58135904256
+    m_Key: Name Input - prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1978196000768
+    m_Key: Go Online - button text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9098719100928
+    m_Key: Connection info - info text
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1605907742072

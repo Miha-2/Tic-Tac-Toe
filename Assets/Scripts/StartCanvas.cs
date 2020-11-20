@@ -9,7 +9,7 @@ public class StartCanvas : MonoBehaviour
 {
     [SerializeField] private Button _goOnlineBtn = null;
     [SerializeField] private TMP_InputField _inputText = null;
-    [SerializeField] private GameObject _infoText = null;
+    [SerializeField] private GameObject _connectingInfo = null;
     private NetworkManager _netManager;
     private const string Nickname = "Nickname";
 
@@ -35,7 +35,7 @@ public class StartCanvas : MonoBehaviour
     {
         _goOnlineBtn.gameObject.SetActive(false);
         _inputText.gameObject.SetActive(false);
-        _infoText.SetActive(true);
+        _connectingInfo.SetActive(true);
         PlayerPrefs.SetString(Nickname, _inputText.text);
         _netManager.Connect(_inputText.text);
     }

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Lobby Canvas_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 5c755d3ff02c79240a94f0b3ba4870fb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 9742024704
+    m_Localized: "Create Room\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62326013952
+    m_Localized: Leave Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5950969446400
+    m_Localized: Waiting for opponent
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

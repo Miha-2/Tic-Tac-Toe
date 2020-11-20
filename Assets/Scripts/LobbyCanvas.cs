@@ -32,8 +32,6 @@ public class LobbyCanvas : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LeaveRoom();
     }
-
-    [SerializeField] private TextMeshProUGUI debugText = null;
     public override void OnCreatedRoom()
     {
         //debugText.color = Color.green;

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Lobby Canvas Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Lobby Canvas
+  m_TableCollectionNameGuidString: 5c755d3ff02c79240a94f0b3ba4870fb
+  m_Entries:
+  - m_Id: 9742024704
+    m_Key: Create room - button text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62326013952
+    m_Key: Leave room - button text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5950969446400
+    m_Key: Waiting for opponent - info text
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1605908417253

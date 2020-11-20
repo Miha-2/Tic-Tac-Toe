@@ -17,22 +17,60 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 2d6eae755afffea40b181d8f11bfeea7
   m_SerializeEntries:
-  - m_GUID: bec0e66a1f5f9bd45b4a421da948ce4f
-    m_Address: StringTable_sl
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-sl
-    m_mainAssetType: UnityEngine.Localization.Tables.StringTable, Unity.Localization,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: cdca1f987ac89404093cf8137782dd56
-    m_Address: StringTable_en
+  - m_GUID: e795af4ff40c8f44496b2892118c4ba5
+    m_Address: Start Canvas_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
-    m_mainAssetType: UnityEngine.Localization.Tables.StringTable, Unity.Localization,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cbe4162b0c76f4f47877077a9c16411a
+    m_Address: Start Canvas_sl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-sl
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bc45daa9483047f40b4b294129cb99d3
+    m_Address: Lobby Canvas_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: eb426359b46089249a13f08325a0fb79
+    m_Address: Lobby Canvas_sl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-sl
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 14cdab1f71652b14d8ea238038ebe043
+    m_Address: Game Canvas Table_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bc66e44e5a36a7e43a4e33b226eaa1b0
+    m_Address: Game Canvas Table_sl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-sl
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3ba87be4546d5554e97f93d5847ec433
+    m_Address: Smart Test_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3f5286eaeb0da564db23da371f9a0efc
+    m_Address: Smart Test_sl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-sl
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 1
