@@ -9,6 +9,8 @@ using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -20,7 +22,6 @@ public class GamePlayer : MonoBehaviour
     [SerializeField] private Image circle = null;
     [SerializeField] private Image cross = null;
     private static readonly Color unconfirmedColor = new Color(0.45f, 0.45f, 0.45f);
-    [SerializeField] private TextMeshProUGUI winnerText = null;
     //public string resetButton = "R";
     [SerializeField] private Transform _gameCanvas = null;
     private FieldType myType;
@@ -33,7 +34,7 @@ public class GamePlayer : MonoBehaviour
     [SerializeField] private GameObject _rematchButton = null;
     [SerializeField] private GameObject _randomButton = null;
     private Image[] placedImages = new Image[9];
-    public Photon.Realtime.Player opponent;
+    public Player opponent;
     
     private EventSystem _eventSystem;
     [SerializeField] private GraphicRaycaster _graphicRaycaster = null;
@@ -49,6 +50,11 @@ public class GamePlayer : MonoBehaviour
             opponentDisplay.HasTurn = !value;
             _hasTurn = value;
         }
+    }
+
+    private void Start()
+    {
+        _winningText = _winningTextEvent.StringReference;
     }
 
     private void OnEnable()
@@ -228,6 +234,9 @@ public class GamePlayer : MonoBehaviour
         return 0;
     }
 
+    [SerializeField] private LocalizeStringEvent _winningTextEvent = null;
+    private LocalizedString _winningText;
+    [HideInInspector] public int WinState = 0;
     private void Win(FieldType type)
     {
         isFinnished = true;
@@ -237,15 +246,18 @@ public class GamePlayer : MonoBehaviour
         selfDisplay.HasTurn = false;
         opponentDisplay.HasTurn = false;
         
-        string t;
         if (type == myType)
-            t = "You won!";
+            //Win
+            WinState = 0;
         else if (type == FieldType.Nobody)
-            t = "Draw!";
+            //Draw
+            WinState = 1;
         else
-            t = "You lost!";
+            //Defeat
+            WinState = 2;
 
-        winnerText.text = t;
+        _winningTextEvent.gameObject.SetActive(true);
+        _winningText.RefreshString();
     }
 
     private void OnDisable()
@@ -270,7 +282,7 @@ public class GamePlayer : MonoBehaviour
 
         _rematchButton.SetActive(false);
         _randomButton.SetActive(true);
-        winnerText.text = String.Empty;
+        _winningTextEvent.gameObject.SetActive(false);
         isFinnished = false;
         if(rematch)
             StartGame();

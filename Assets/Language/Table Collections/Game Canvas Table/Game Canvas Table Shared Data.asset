@@ -27,6 +27,10 @@ MonoBehaviour:
     m_Key: Rematch - toggle text
     m_Metadata:
       m_Items: []
+  - m_Id: 336740890673152
+    m_Key: Winning text - info text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -1544,7 +1544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &698523962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1657,7 +1657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &786270578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1755,7 +1755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _goOnlineBtn: {fileID: 2146031971}
   _inputText: {fileID: 1492968253}
-  _connectingInfo: {fileID: 0}
+  _connectingInfo: {fileID: 352276157}
 --- !u!1 &899054666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3735,13 +3735,14 @@ GameObject:
   - component: {fileID: 1635072132}
   - component: {fileID: 1635072134}
   - component: {fileID: 1635072133}
+  - component: {fileID: 1635072135}
   m_Layer: 5
   m_Name: Winning Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1635072132
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3858,6 +3859,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635072131}
   m_CullTransparentMesh: 0
+--- !u!114 &1635072135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635072131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:625fe2e3d268aa044b85f2bb322d9d34
+    m_TableEntryReference:
+      m_KeyId: 336740890673152
+      m_Key: 
+  m_FormatArguments:
+  - {fileID: 1815936726}
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1635072133}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &1712561596 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7732439114426661361, guid: 54928275f482fcd4886d232430258ae9, type: 3}
@@ -3953,7 +3989,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 3768588459379886678, guid: a8a4c761356619543b5d89e079aabba2, type: 3}
   cross: {fileID: 9174221091581139097, guid: df9c4a43ab14d1d4a9077e21fb5e1717, type: 3}
-  winnerText: {fileID: 1635072133}
   _gameCanvas: {fileID: 698523965}
   _zoneTransforms:
   - {fileID: 736425879}
@@ -3970,6 +4005,8 @@ MonoBehaviour:
   _graphicRaycaster: {fileID: 698523962}
   selfDisplay: {fileID: 451596626}
   opponentDisplay: {fileID: 663800334}
+  _winningTextEvent: {fileID: 1635072135}
+  WinState: 1
 --- !u!4 &1815936727
 Transform:
   m_ObjectHideFlags: 0

@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 625fe2e3d268aa044b85f2bb322d9d34, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - id: 0
   m_TableData:
   - m_Id: 18407456768
     m_Localized: Exit
@@ -30,5 +31,14 @@ MonoBehaviour:
     m_Localized: Rematch
     m_Metadata:
       m_Items: []
+  - m_Id: 336740890673152
+    m_Localized: '{WinState:choose(0|1|2):You won!|Draw!|You lost!|Error}'
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00802b9943320100

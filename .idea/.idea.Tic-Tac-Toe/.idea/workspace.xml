@@ -16,90 +16,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65515265-2fe4-403c-808a-2b566e9f964a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table Shared Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table Shared Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table_en.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table_en.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table_sl.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table_sl.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table/Lobby Canvas Shared Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table/Lobby Canvas Shared Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table/Lobby Canvas.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table/Lobby Canvas.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table/Lobby Canvas_en.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table/Lobby Canvas_en.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table/Lobby Canvas_sl.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Lobby Canvas Table/Lobby Canvas_sl.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table/Start Canvas Shared Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table/Start Canvas Shared Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table/Start Canvas.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table/Start Canvas.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table/Start Canvas_en.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table/Start Canvas_en.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table/Start Canvas_sl.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Start Canvas Table/Start Canvas_sl.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test Shared Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test Shared Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test_en.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test_en.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test_sl.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test_sl.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Test.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Test.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Test.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tic-Tac-Toe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-AssetTables.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-AssetTables.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-en.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-en.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-sl.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-sl.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-StringTables.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-StringTables.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/1d40986750a2cf843ad831d3ab405216_BundledAssetGroupSchema.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/1d40986750a2cf843ad831d3ab405216_BundledAssetGroupSchema.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/1d40986750a2cf843ad831d3ab405216_ContentUpdateGroupSchema.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/1d40986750a2cf843ad831d3ab405216_ContentUpdateGroupSchema.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/9c9fd23673062864398af555d31099ff_BundledAssetGroupSchema.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/9c9fd23673062864398af555d31099ff_BundledAssetGroupSchema.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/9c9fd23673062864398af555d31099ff_ContentUpdateGroupSchema.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/9c9fd23673062864398af555d31099ff_ContentUpdateGroupSchema.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/NewTable Shared Data.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/NewTable Shared Data.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/NewTable.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/NewTable.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/NewTable_en.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/NewTable_en.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/NewTable_sl.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/NewTable_sl.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/StringTable Shared Data.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/StringTable Shared Data.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/StringTable.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/StringTable.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/StringTable_en.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/StringTable_en.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/StringTable_sl.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Language/StringTable_sl.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates/Packed Assets.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates/Packed Assets.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Built In Data.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Built In Data.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-AssetTables.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-AssetTables.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-StringTables.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-StringTables.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/0149ad9b13da0c34789c8593f0871092_BundledAssetGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/0149ad9b13da0c34789c8593f0871092_BundledAssetGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/0149ad9b13da0c34789c8593f0871092_ContentUpdateGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/0149ad9b13da0c34789c8593f0871092_ContentUpdateGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/2d6eae755afffea40b181d8f11bfeea7_BundledAssetGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/2d6eae755afffea40b181d8f11bfeea7_BundledAssetGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/2d6eae755afffea40b181d8f11bfeea7_ContentUpdateGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/2d6eae755afffea40b181d8f11bfeea7_ContentUpdateGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/7b242502b7fb481439f9203c5d7b62a1_PlayerDataGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/7b242502b7fb481439f9203c5d7b62a1_PlayerDataGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/c1cf2ab1ff588fe46af241a1e1a2b617_BundledAssetGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/c1cf2ab1ff588fe46af241a1e1a2b617_BundledAssetGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/c1cf2ab1ff588fe46af241a1e1a2b617_ContentUpdateGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/c1cf2ab1ff588fe46af241a1e1a2b617_ContentUpdateGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/c649041f7f80f174497070567a255062_BundledAssetGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/c649041f7f80f174497070567a255062_BundledAssetGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/c649041f7f80f174497070567a255062_ContentUpdateGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/c649041f7f80f174497070567a255062_ContentUpdateGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/e2cd606b822c7f54da4ac564b76daf28_BundledAssetGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/e2cd606b822c7f54da4ac564b76daf28_BundledAssetGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/e2cd606b822c7f54da4ac564b76daf28_ContentUpdateGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/e2cd606b822c7f54da4ac564b76daf28_ContentUpdateGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedPlayMode.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedPlayMode.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DefaultObject.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/DefaultObject.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows/addressables_content_state.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows/addressables_content_state.bin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table Shared Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table Shared Data.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table_en.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table_en.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table_sl.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Language/Table Collections/Game Canvas Table/Game Canvas Table_sl.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LobbyCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LobbyCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test Shared Data.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test Shared Data.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test_en.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test_en.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test_sl.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Smart Test_sl.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Test.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Test.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +106,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Test/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.8.5/Editor/Build/DataBuilders/BuildScriptBase.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -139,11 +135,11 @@
         <option value="$PROJECT_DIR$/Assets/Photon/PhotonRealtime/Code/Room.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInfoDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerListingMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LobbyCanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Test/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
       </list>
     </option>
   </component>
@@ -242,6 +238,9 @@
       <workItem from="1605781755460" duration="1096000" />
       <workItem from="1605783197894" duration="7860000" />
       <workItem from="1605906714464" duration="2208000" />
+      <workItem from="1605961316792" duration="1734000" />
+      <workItem from="1605964774088" duration="1218000" />
+      <workItem from="1605989686268" duration="6236000" />
     </task>
     <servers />
   </component>
