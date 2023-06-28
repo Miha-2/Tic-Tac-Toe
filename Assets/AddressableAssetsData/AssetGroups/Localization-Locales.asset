@@ -18,23 +18,17 @@ MonoBehaviour:
   m_GUID: e2cd606b822c7f54da4ac564b76daf28
   m_SerializeEntries:
   - m_GUID: c28c1973a6e96624592abbaef8d3be47
-    m_Address: English (en)
+    m_Address: English
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
-    m_mainAssetType: UnityEngine.Localization.Locale, Unity.Localization, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cd8e130b307f07b4b8eb5c162f4c187d
-    m_Address: Slovenian (sl)
+    m_Address: Slovenian
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
-    m_mainAssetType: UnityEngine.Localization.Locale, Unity.Localization, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3d0090a94d69034478a357243e83850e, type: 2}
   m_SchemaSet:

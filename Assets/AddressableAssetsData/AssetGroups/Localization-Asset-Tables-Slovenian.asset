@@ -10,16 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-StringTables
+  m_Name: Localization-Asset-Tables-Slovenian
   m_EditorClassIdentifier: 
-  m_GroupName: Localization-StringTables
+  m_GroupName: Localization-Asset-Tables-Slovenian
   m_Data:
     m_SerializedData: []
-  m_GUID: 2d6eae755afffea40b181d8f11bfeea7
-  m_SerializeEntries: []
+  m_GUID: 5d74fcf7186943747ab79d5797cc18ed
+  m_SerializeEntries:
+  - m_GUID: 312043ca5f71ac149af1342d1a2035ec
+    m_Address: NewTable_sl
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-sl
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 3d0090a94d69034478a357243e83850e, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: a0fd567ac4fa87a48ab543a8198e08c8, type: 2}
-    - {fileID: 11400000, guid: 41d7c912087b25148ad3c0ca5b49e555, type: 2}
+    - {fileID: 11400000, guid: 5a2f00d5238d1244c81d913954b42ca1, type: 2}
+    - {fileID: 11400000, guid: 4ee71473a3ecb1d499b2cd8dc59e4c06, type: 2}
